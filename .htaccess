@@ -1,0 +1,3 @@
+RewriteEngine On
+RewriteBase /PHPulse-/
+RewriteRule ^(.*)$ index.php [L]

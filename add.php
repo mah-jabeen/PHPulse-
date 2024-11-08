@@ -22,7 +22,7 @@
     // here we wil fetch data from student class
     $sql= "SELECT * FROM  studentclass";
     
-    $result = mysqli_query($conn, $sql) or die("query unsuccessful");
+    $result = mysqli_query($conn, query: $sql) or die("query unsuccessful");
     
     // this result variable will become array
     while($row = mysqli_fetch_assoc($result)){
