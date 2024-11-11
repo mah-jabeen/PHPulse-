@@ -16,8 +16,7 @@
                 <option value="" selected disabled>Select Class</option>
               
                 <?php
-    // we made connection here
-    $conn = mysqli_connect("10.101.8.49","dbuser","DBUser123","crud_12_new") or die("connection failed");
+                include 'config.php';
     // mysql command
     // here we wil fetch data from student class
     $sql= "SELECT * FROM  studentclass";

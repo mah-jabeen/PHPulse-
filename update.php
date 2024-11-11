@@ -12,7 +12,7 @@
 <?php 
 
 if(isset($_POST['showbtn'])){
-    $conn = mysqli_connect("10.101.8.49","dbuser","DBUser123","crud_12_new") or die("connection failed");
+    include 'config.php';
     // the value that super global variable is giving will save into this
 $stu_id= $_POST['sid'];
     $sql= "SELECT * FROM student WHERE sid = {$stu_id}";

@@ -3,8 +3,8 @@
 <div id="main-content">
     <h2>Update Record</h2>
     <?php
-    $conn = mysqli_connect("10.101.8.49","dbuser","DBUser123","crud_12_new") or die("connection failed");
-    // the value that super global variable is giving will save into this
+include 'config.php';
+// the value that super global variable is giving will save into this
 $stu_id= $_GET['id'];
     $sql= "SELECT * FROM student WHERE sid = {$stu_id}";
     
@@ -58,7 +58,6 @@ $stu_id= $_GET['id'];
     }
 }
     ?>
-    
 </div>
 </div>
 </body>
